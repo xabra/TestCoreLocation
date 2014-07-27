@@ -21,6 +21,7 @@
 		88140BFF1984271D004F2BFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88140BE11984271D004F2BFF /* UIKit.framework */; };
 		88140C071984271D004F2BFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88140C051984271D004F2BFF /* InfoPlist.strings */; };
 		88140C091984271D004F2BFF /* TestCoreLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88140C081984271D004F2BFF /* TestCoreLocationTests.m */; };
+		88140C13198427EB004F2BFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88140C12198427EB004F2BFF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		88140C041984271D004F2BFF /* TestCoreLocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCoreLocationTests-Info.plist"; sourceTree = "<group>"; };
 		88140C061984271D004F2BFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88140C081984271D004F2BFF /* TestCoreLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreLocationTests.m; sourceTree = "<group>"; };
+		88140C12198427EB004F2BFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88140C13198427EB004F2BFF /* CoreLocation.framework in Frameworks */,
 				88140BE01984271D004F2BFF /* CoreGraphics.framework in Frameworks */,
 				88140BE21984271D004F2BFF /* UIKit.framework in Frameworks */,
 				88140BDE1984271D004F2BFF /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		88140BDC1984271D004F2BFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88140C12198427EB004F2BFF /* CoreLocation.framework */,
 				88140BDD1984271D004F2BFF /* Foundation.framework */,
 				88140BDF1984271D004F2BFF /* CoreGraphics.framework */,
 				88140BE11984271D004F2BFF /* UIKit.framework */,
@@ -112,12 +116,9 @@
 		88140BE31984271D004F2BFF /* TestCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				88140BEC1984271D004F2BFF /* VAXAppDelegate.h */,
-				88140BED1984271D004F2BFF /* VAXAppDelegate.m */,
 				88140BEF1984271D004F2BFF /* Main.storyboard */,
 				88140BF21984271D004F2BFF /* VAXViewController.h */,
 				88140BF31984271D004F2BFF /* VAXViewController.m */,
-				88140BF51984271D004F2BFF /* Images.xcassets */,
 				88140BE41984271D004F2BFF /* Supporting Files */,
 			);
 			path = TestCoreLocation;
@@ -126,6 +127,9 @@
 		88140BE41984271D004F2BFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88140BF51984271D004F2BFF /* Images.xcassets */,
+				88140BEC1984271D004F2BFF /* VAXAppDelegate.h */,
+				88140BED1984271D004F2BFF /* VAXAppDelegate.m */,
 				88140BE51984271D004F2BFF /* TestCoreLocation-Info.plist */,
 				88140BE61984271D004F2BFF /* InfoPlist.strings */,
 				88140BE91984271D004F2BFF /* main.m */,
@@ -200,6 +204,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Vaxis Technologies";
 				TargetAttributes = {
+					88140BD91984271D004F2BFF = {
+						DevelopmentTeam = TM3N8JBBNP;
+					};
 					88140BFA1984271D004F2BFF = {
 						TestTargetID = 88140BD91984271D004F2BFF;
 					};
@@ -377,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCoreLocation/TestCoreLocation-Prefix.pch";
 				INFOPLIST_FILE = "TestCoreLocation/TestCoreLocation-Info.plist";
@@ -390,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCoreLocation/TestCoreLocation-Prefix.pch";
 				INFOPLIST_FILE = "TestCoreLocation/TestCoreLocation-Info.plist";
@@ -457,6 +466,7 @@
 				88140C0E1984271D004F2BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88140C0F1984271D004F2BFF /* Build configuration list for PBXNativeTarget "TestCoreLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +475,7 @@
 				88140C111984271D004F2BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

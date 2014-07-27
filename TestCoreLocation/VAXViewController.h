@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VAXViewController : UIViewController
+@interface VAXViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
